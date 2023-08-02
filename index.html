@@ -21,7 +21,7 @@
   <form>
    <fieldset>
     <div class="fieldset-wrapper">
-      <legend>Informações do Evento</legend>
+      <legend>Informações do Evento <span class="linha"></span></legend>
 
       <div class="input-wrapper"> 
       <label for="event-title">Titulo do evento<span>(mínimo 8 caracteres)</span> 
@@ -43,21 +43,73 @@
 
     <div class="input-wrapper"> 
       <label for="event-info">Informações extras</label>
-      <input type="text" id="event-info">
+      <textarea class="event-info"></textarea>
     </div>
 
     <div class="input-wrapper"> 
       <label for="event-category">Categoria</label>
       <select id="event-category">
-        <option value="live">Live</option>
+        <option value="live"> Live </option>
         <option value="podcast">Podcast</option>
         <option value="mentorship">Mentoria</option>
       </select>
     </div>
+  </div>
+</fieldset>
+
+    <fieldset>
+      <div class="fieldset-wrapper">
+        <legend>Privacidade <span class="linha2"></span></legend>
     
+  
+        <div class="input-wrapper"> 
+        <label for="event-email">E-mail do administrador<span>(digite um email válido)</span> 
+        </label>
+        <input type="email" id="event-email">
+      </div>
+
+      <div class="input-wrapper"> 
+        <label for="event-passaword">Senha de acesso para os participantes<span>(mínimo 8 caracteres)</span> 
+        </label>
+        <input type="password" id="event-passaword">
+      </div>
+
+      <div class="checkbox-wrapper">
+        <input type="checkbox" id="event-private"/>
+        <label for="event-private">Evento privado</label> 
+      </div>
+
+    </fieldset>
+
+    <fieldset>
+      <div class="fieldset-wrapper">
+        <legend>Data e hora <span class="linha3"></span></legend>
+
+        <div class="col">
+    
+        <div class="input-wrapper"> 
+        <label for="event-date">Data</label>
+        <input type="date" id="event-date">
+      </div>
+
+      <div class="input-wrapper"> 
+        <label for="event-initial">Das</label>
+        <input type="time" id="event-initial">
+      </div>
+
+      <div class="input-wrapper"> 
+        <label for="event-end">Até</label>
+        <input type="time" id="end">
+      </div>
     </div>
-   </fieldset>
-  </form>
+  </fieldset>
+</form>
+
+    <footer>
+      <div class="buttom"><div class="evento">Enviar evento</div></div>
+    </footer>
+
+      
  </div>
 </body>
 </html>
