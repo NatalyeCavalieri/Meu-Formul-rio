@@ -75,8 +75,6 @@ line-height: 34px;
 padding-bottom: 24px;
 
 
-
-
 }
 .fieldset-wrapper label{
 color: #4E4958;
@@ -266,22 +264,16 @@ legend .linha3{
  }
 
  .buttom{
-border-radius: 8px;
-background: #2304d3;
-display: flex;
-align-items: center;
-width: 608px;
-height: 56px;
-gap: 10px;
-
- }
- .evento{
-  display: flex;
-  align-items: center;
-  margin: auto;
+  background-color: #24157d;
   color: white;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 26px;
+  border-radius: 10px;
  }
-  .buttom:hover{
-    background: #1199e3;
-  }
+
+ .buttom:hover{
+  background-color: #126bdf;
+ }
+
 

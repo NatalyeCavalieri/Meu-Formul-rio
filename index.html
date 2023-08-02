@@ -18,7 +18,7 @@
       formulário de inscrição.</p>
 
   </header>
-  <form>
+  <form id="my-form">
    <fieldset>
     <div class="fieldset-wrapper">
       <legend>Informações do Evento <span class="linha"></span></legend>
@@ -26,7 +26,11 @@
       <div class="input-wrapper"> 
       <label for="event-title">Titulo do evento<span>(mínimo 8 caracteres)</span> 
       </label>
-      <input type="text" id="event-title">
+      <input 
+      type="text" 
+      id="event-title"
+      required
+      minlength="8"/>
     </div>
 
     <div class="input-wrapper"> 
@@ -106,7 +110,11 @@
 </form>
 
     <footer>
-      <div class="buttom"><div class="evento">Enviar evento</div></div>
+      <input 
+      class="buttom"
+      type="submit"
+      form="my-form"
+      value="Salvar evento"/>
     </footer>
 
       
